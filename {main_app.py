@@ -38,5 +38,5 @@ if __name__ == "__main__":
     app = ScholarSyncUI(root)
     root.mainloop()
 
-        
+      
     
