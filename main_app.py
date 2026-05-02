@@ -1,25 +1,18 @@
 import tkinter as tk
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 6851b7f231464338c9f30112d975030bb7353c3f
 from logic import StudentManager # This imports your logic.py file so you can use the StudentManager class and its methods in your UI.
 
 class ScholarSyncUI:
   def __init__(self, root):
         self.root = root
         self.root.title("ScholarSync - Focus Hub    ")
-<<<<<<< HEAD
         self.root
-=======
->>>>>>> 6851b7f231464338c9f30112d975030bb7353c3f
         # This connects to your logic.py file
         # Initialize the "THhinking" part from logic.py
         self.manager = StudentManager()
         
         # UI Elements
-<<<<<<< HEAD
         self.label = tk.Label(root, text="Welcome to ScholarSync!", font=("Arial", 16))
         self.label.pack(pady=20)
        
@@ -52,7 +45,6 @@ class ScholarSyncUI:
              self.root.after(1000, self.update_timer)
 
         # This part Must be at the very bottom to launch the window
-=======
         self.welcome_label = tk.Label(self.root, text="Welcome to ScholarSync!", font=("Arial", 16))
         self.welcome_label.pack(pady=20)
        
@@ -80,14 +72,10 @@ class ScholarSyncUI:
       
         
 # This part Must be at the very bottom to launch the window
->>>>>>> 6851b7f231464338c9f30112d975030bb7353c3f
 if __name__ == "__main__":  
     root = tk.Tk()
     app = ScholarSyncUI(root)
     root.mainloop()
-<<<<<<< HEAD
 
-=======
->>>>>>> 6851b7f231464338c9f30112d975030bb7353c3f
       
     
