@@ -19,8 +19,9 @@ class ScholarSyncUI:
         
         # output area to show results in the window
         self.output_label = tk.Label(root, text="", wraplength=350)
-        self.output_label.pack(pady=10)
-
+        self.timer_label = tk.Label(root, text="25:00", font=("Arial", 24), fg="red")
+        self.timer_label.pack(pady=20)
+        self.update_timer()
   def display_links(self):
         # This calls the logic from your logic.py
         links = self.manager.get_links_student()
@@ -31,6 +32,15 @@ class ScholarSyncUI:
        
         self.output_label.config(text=f"Resources Found:\n{links_str}")
         print(f"Terminal Log: {links}")
+  
+  def update_timer(self):
+       
+        time_string = self.manager.format_time()
+
+        self.timer_label.config(text=time_string)
+
+        if self.manager.run_timer_tick():
+             self.root.after(1000, self.update_timer)
 
         # This part Must be at the very bottom to launch the window
 if __name__ == "__main__":  

@@ -7,8 +7,8 @@ build/
 dist/
 *.spec
 
-# Enviromental variables /
-local settings
+# Environmental variables /
+local_settings.py
 .env    
 .venv/
 env

@@ -2,7 +2,7 @@ class StudentManager:
     def __init__(self):
         self.study_resources = ["https://google.com", "https://facebook.com", "https://twitter.com"]
         self.time_left = 25 * 60  # Default Pomodoro time in seconds (25 minutes)
-        self.is_running = False
+        self.is_running = True
 
     def get_links_student(self):
         """Returns the list of resources to the student."""
@@ -17,15 +17,11 @@ class StudentManager:
             return False
             
     def format_time(self):
-        mins, secs = divmod(self.time_left, 60)
-        return f"{mins:02d}:{secs:02d}" 
-        """
-        Pomodoro Logic: Converts minutes to seconds.
-        This fulfills the 'Algorithm' requirement.
-        """
-        mins, secs = divmod(self.time_left, 60)
-        return f"{mins:02d}:{secs:02d}"
         
+      
 
-
-
+        
+        mins, secs =divmod(self.time_left, 60)
+        return f"{mins:02d}:{secs:02d}"
+     
+        
