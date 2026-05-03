@@ -32,6 +32,13 @@ MANIFEST
 *.manifest
 *.spec
 
+<<<<<<< HEAD
+# Environmental variables /
+local_settings.py
+.env    
+.venv/
+env
+=======
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
@@ -216,3 +223,4 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+>>>>>>> 6851b7f231464338c9f30112d975030bb7353c3f
